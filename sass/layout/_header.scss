@@ -1,0 +1,13 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    &__container{
+        display: flex;
+        align-items: center;
+        gap:3.9rem; 
+    }
+    
+}
