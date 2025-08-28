@@ -1,13 +1,7 @@
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+.cabecalho {
+  @include flex($align: center, $justify: space-between);
 
-    &__container{
-        display: flex;
-        align-items: center;
-        gap:3.9rem; 
-    }
-    
+  &__container {
+    @include flex($align: center, $gap: 2rem);
+  }
 }

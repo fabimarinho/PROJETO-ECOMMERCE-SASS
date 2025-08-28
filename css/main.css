@@ -16,13 +16,17 @@ body {
 
 .cabecalho {
   display: flex;
-  justify-content: space-between;
+  flex-flow: row nowrap;
   align-items: center;
+  justify-content: space-between;
+  gap: 0;
 }
 .cabecalho__container {
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
-  gap: 3.9rem;
+  justify-content: start;
+  gap: 2rem;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
