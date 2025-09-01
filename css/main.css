@@ -12,6 +12,7 @@ body {
   font-family: Inter, sans-serif;
   font-size: 1.6rem;
   line-height: 1.2;
+  color: #000;
 }
 
 .cabecalho {
@@ -20,13 +21,45 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 0;
+  padding: 3.12rem 4.88rem;
 }
 .cabecalho__container {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: start;
-  gap: 2rem;
+  gap: 6.1rem;
+}
+.cabecalho__logo {
+  width: 15rem;
+  margin-bottom: 2px;
+}
+.cabecalho__navegacao {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  gap: 4.88rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.cabecalho__link {
+  font-size: 1.33rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  line-height: 1;
+  border-bottom: solid 2px transparent;
+}
+.cabecalho__link--ofertas {
+  color: red;
+}
+.cabecalho__link:hover {
+  border-bottom-color: currentColor;
+}
+.cabecalho__link__icone {
+  color: inherit;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
