@@ -13,6 +13,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.2;
   color: #000;
+  background-color: #000;
 }
 
 .cabecalho {
@@ -22,6 +23,7 @@ body {
   justify-content: space-between;
   gap: 0;
   padding: 3.12rem 4.88rem;
+  background-color: #fff;
 }
 .cabecalho__container {
   display: flex;
@@ -43,6 +45,14 @@ body {
   font-size: 1.25rem;
   font-weight: 600;
 }
+.cabecalho__lista {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 4.88rem;
+  list-style: none;
+}
 .cabecalho__link {
   font-size: 1.33rem;
   text-transform: uppercase;
@@ -58,8 +68,19 @@ body {
 .cabecalho__link:hover {
   border-bottom-color: currentColor;
 }
+.cabecalho__link__icones {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  gap: 1.2rem;
+}
 .cabecalho__link__icone {
+  display: inline-block;
   color: inherit;
+  fill: currentColor;
+  width: 2rem;
+  height: 2rem;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

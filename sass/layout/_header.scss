@@ -1,6 +1,7 @@
 .cabecalho {
   @include flex($align: center, $justify: space-between);
   padding: 3.12rem 4.88rem;
+  background-color: $cor-branca;
 
   &__container {
     @include flex($align: center, $gap: 6.1rem);
@@ -16,6 +17,12 @@
     font-size: 1.25rem;
     font-weight: 600;
   }
+
+  &__lista {
+    @include flex($gap: 4.88rem);
+    list-style: none;
+  }
+
   &__link {
     font-size: 1.33rem;
     text-transform: uppercase;
@@ -32,8 +39,17 @@
     &:hover {
       border-bottom-color: currentColor;
     }
+    &__icones {
+      @include flex($align: center, $gap: 1.2rem);
+    }
+
     &__icone {
+      display: inline-block;
       color: inherit;
+      fill: currentColor;
+      // stroke: currentColor;
+      width: 2rem;
+      height: 2rem;
     }
   }
 }
