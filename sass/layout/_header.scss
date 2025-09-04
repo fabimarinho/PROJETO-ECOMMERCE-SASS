@@ -4,7 +4,7 @@
   background-color: $cor-branca;
 
   &__container {
-    @include flex($align: center, $gap: 6.1rem);
+    @include flex($align: end, $gap: 6.1rem);
   }
 
   &__logo {
@@ -21,6 +21,10 @@
   &__lista {
     @include flex($gap: 4.88rem);
     list-style: none;
+
+    &--tipo {
+      @include flex($direction: column, $gap: 0.65rem);
+    }
   }
 
   &__link {
@@ -36,9 +40,22 @@
       color: red;
     }
 
+    &--tipo {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: $cor-cinza;
+
+      &:hover {
+        border-bottom: none;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+    }
+
     &:hover {
       border-bottom-color: currentColor;
     }
+
     &__icones {
       @include flex($align: center, $gap: 1.2rem);
     }
