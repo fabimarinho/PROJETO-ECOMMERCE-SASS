@@ -23,13 +23,13 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 0;
-  padding: 3.12rem 4.88rem;
+  padding: 0 4.88rem;
   background-color: #fff;
 }
 .cabecalho__container {
   display: flex;
   flex-flow: row nowrap;
-  align-items: end;
+  align-items: center;
   justify-content: start;
   gap: 6.1rem;
 }
@@ -59,7 +59,7 @@ body {
   flex-flow: column nowrap;
   align-items: stretch;
   justify-content: start;
-  gap: 0.65rem;
+  gap: 0.42rem;
 }
 .cabecalho__link {
   font-size: 1.33rem;
@@ -86,13 +86,16 @@ body {
 .cabecalho__link:hover {
   border-bottom-color: currentColor;
 }
-.cabecalho__link__item-lista:hover {
+.cabecalho__item-lista {
+  padding: 3.12rem 0;
+}
+.cabecalho__item-lista:hover {
   border-bottom-color: currentColor;
 }
-.cabecalho__link__item-lista:hover .cabecalho__expansao-tipos {
+.cabecalho__item-lista:hover .cabecalho__expansao-tipos {
   display: flex;
 }
-.cabecalho__link__expansao-tipos {
+.cabecalho__expansao-tipos {
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
@@ -103,20 +106,21 @@ body {
   background-color: #fff;
   left: 0;
   right: 0;
+  top: 100%;
   padding: 3.12rem 4.88rem;
   box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.1);
 }
-.cabecalho__link__imagem {
-  max-height: 40rem;
+.cabecalho__imagem {
+  max-height: 35rem;
 }
-.cabecalho__link__icones {
+.cabecalho__icones {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: start;
   gap: 1.2rem;
 }
-.cabecalho__link__icone {
+.cabecalho__icone {
   display: inline-block;
   color: inherit;
   fill: currentColor;
